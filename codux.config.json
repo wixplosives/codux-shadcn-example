@@ -5,10 +5,22 @@
     "include": ["src/**"],
     "exclude": ["src/_codux/component-templates/**"]
   },
+  "newComponent": {
+    "componentsPath": "src/components",
+    "templatesPath": "src/_codux/component-templates"
+  },
   "resolve": {
     "alias": {
       "@/*": "./src/*",
       "utils": "./src/lib/utils"
+    }
+  },
+  "scripts": {
+    "install": {
+      "title": "Install",
+      "description": "Run install",
+      "command": "npm i",
+      "trigger": ["checkout", "pull", "setup"]
     }
   }
 }
